@@ -10,6 +10,13 @@ def b():
     key=input("Введите название страны, чтобы узнать ее столицу ")
     print(slovar.get(key, " Такой страны не существует"))
 # slovar[key]
+def b2():
+    key=input("Введите страну/столицу ")
+    for i in slovar.keys():
+        if key==i:
+            print(slovar[i])
+        elif key==slovar[i]:
+            print(i)
 def c():
     print(slovar)
     otsortsp=sorted(slovar)
@@ -18,4 +25,4 @@ def c():
         slovar_element = {i: slovar[i]}
         res.update(slovar_element)
     print(res)
-c()
+b2()
